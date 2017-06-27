@@ -1,7 +1,9 @@
 /*landing page */
-body{
+
+body {
     margin: 0 auto;
 }
+
 #landing {
     background: url('images/background.png') no-repeat center;
     background-size: cover;
@@ -16,80 +18,73 @@ body{
     display: flex;
     position: absolute;
     justify-content: center;
-    top: 40%;
+    top: 60%;
     right: 45%;
+}
+
+.employer {
+    border: 20px 20px;
+}
+
+.freelancer {
+    border: 20px 20px;
 }
 
 .contact {
     display: flex;
     position: relative;
     justify-content: center;
-    background-color: transparent;
     top: 750px;
+    left:100px;
 }
 
-a {
-    padding: 5px 5px;
+.png{
+    width:30%;
 }
 
 
 /* employer page */
-.job{
+
+.job {
     background-color: black;
     width: 100%;
     height: 100%;
     min-width: 1000px;
     min-height: 1000px;
 }
-.navContainer{
-    border: 1px solid;
+
+.navContainer {
     display: flex;
+    position: sticky;
     flex-direction: row;
     flex-wrap: nowrap;
     flex-direction: row;
-    justify-content: center;
-    
+    justify-content: space-around;
+    top: 25%;
 }
 
 .nav {
-    color:white;
+    color: white;
     padding: 5px;
 }
 
-.weather{
+.weather {
     display: block;
     position: absolute;
-    width:40vw;
+    width: 40vw;
     height: 20vh;
     background-color: white;
     top: 5%;
-
+    right: 25%;
 }
+
 
 /*for_hire*/
 
-.hire{
-    border: 1px solid red;
+.hire {
     background-color: black;
     width: 100%;
     height: 100%;
     min-width: 1000px;
     min-height: 1000px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
