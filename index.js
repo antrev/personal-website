@@ -39,7 +39,7 @@ $(document).ready(function() {
     ///// NAV BAR EFFECTS ///////
 
       $('.nav').hover(function(){
-      $(this).toggleClass('bounce');
+      $(this).toggleClass('animate bounce');
      })
       
 
