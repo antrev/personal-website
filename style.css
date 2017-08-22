@@ -1,16 +1,84 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -21,41 +89,53 @@ time, mark, audio, video {
 
 
 
-/*landing page */
+
+/************ LANDING PAGE ****************/
 
 body {
     margin: 0 auto;
+    background-color: black;
 }
 
+
 #landing {
-    background:url("images/hello.png") no-repeat;
+    background: url("images/anton.jpg") no-repeat center;
     background-size: cover;
-    width: 100%;
-    height: 100%;
-    min-width: 1000px;
-    min-height: 1000px;
-    position: absolute;
+    width: 100% ;
+    height: 100% ;
+    position: fixed;
 }
 
 .button {
+    border: 5%;
     display: flex;
     position: relative;
     justify-content: space-around;
-    top: 35%;
+    top: 20%;
 }
 
-.employer{
-    font-size: 2.5em;  
-    background-color: transparent;
-    border: none;
-    box-shadow: -10px -10px 5px #888888;
 
+/* buttons*/
+
+.employer {
+    font-size: 2.5em;
+    color: white;
+    background-color: transparent;
+    border: solid thin white;
+    border-radius: 50%;
+    width: 4.5em;
+    height: 4.5em;
+    box-shadow: -10px -10px 5px #888888;
 }
 
 .freelancer {
-    font-size: 2.5em; 
+    font-size: 2.5em;
     background-color: transparent;
-    border: none;
+    color: white;
+    border: border: solid thin white;
+    border-radius: 50%;
+    width: 4.5em;
+    height: 4.5em;
     box-shadow: 10px -10px 5px #888888;
 }
 
@@ -63,38 +143,55 @@ body {
     display: flex;
     position: relative;
     justify-content: center;
-    top: 750px;
-    left:100px;
+    top: 58%;
+    left: 10%;
+    animation-name: bounce;
+    transform-origin: center bottom;
 }
 
-.png{
-    width:30%;
+.png,
+.bounce {
+    width: 30%;
+}
+
+footer {
+    position: relative;
+    display: inline-block;
+    color: white;
+    top: 65em;
+    left: 48%;
 }
 
 
-/* employer page */
 
-.job {
-    background-color: black;
-    width: 100%;
+/*************** EMPLOYER_PAGE ************/
+
+.job,
+.hire {
+    position: fixed;
+    width: 100% !important;
     height: 100%;
     min-width: 1000px;
     min-height: 1000px;
+    background-color: black;
 }
 
 .navContainer {
     display: flex;
-    position: sticky;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    flex-direction: row;
+    position: relative;
     justify-content: space-around;
     top: 25%;
+    color: white;
+    animation-name: bounce;
+
 }
 
-.nav {
+.nav, .bounce
+{
+    position: relative;
     color: white;
-    padding: 5px;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 2em;
 }
 
 .weather {
@@ -103,16 +200,134 @@ body {
     width: 40vw;
     height: 20vh;
     background-color: white;
-    top: 5%;
-    right: 25%;
+    top: 4%;
+    right: 30%;
 }
 
 
-/*for_hire*/
 
-.hire {
-    width: 100%;
-    height: 100%;
-    min-width: 1000px;
-    min-height: 1000px;
+/************ FOR_HIRE ************/
+
+
+
+/*********** KEYFRAMES AND EFFECTS **********/
+
+@keyframes bounce {
+    from,
+    20%,
+    53%,
+    80%,
+    to {
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transform: translate3d(0, 0, 0);
+    }
+
+    40%,
+    43% {
+        animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        transform: translate3d(0, -30px, 0);
+    }
+
+    70% {
+        animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        transform: translate3d(0, -15px, 0);
+    }
+
+    90% {
+        transform: translate3d(0, -4px, 0);
+    }
 }
+
+@keyframes unfoldIn {
+  0% {
+    transform:scaleY(.005) scaleX(0);
+  }
+  50% {
+    transform:scaleY(.005) scaleX(1);
+  }
+  100% {
+    transform:scaleY(1) scaleX(1);
+  }
+}
+
+@keyframes unfoldOut {
+  0% {
+    transform:scaleY(1) scaleX(1);
+  }
+  50% {
+    transform:scaleY(.005) scaleX(1);
+  }
+  100% {
+    transform:scaleY(.005) scaleX(0);
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform:scale(0);
+  }
+  100% {
+    transform:scale(1);
+  }
+}
+
+@keyframes zoomOut {
+  0% {
+    transform:scale(1);
+  }
+  100% {
+    transform:scale(0);
+  }
+}
+/********* MODAL ********************/
+#modal-container{
+  position:relative;
+  display:table;
+  height:100%;
+  width:100%;
+  top:0;
+  left:0;
+  transform:scale(0);
+  z-index:1;
+
+}
+
+.modal-background{
+    display: none;
+    transform:scale(1);
+    
+}
+
+.modal-background.modal-active{
+ display:table-cell;
+ background:rgba(0,0,0,.8);
+ text-align:center;
+ vertical-align:middle;
+ transform:scaleY(.01) scaleX(0);
+ animation:unfoldIn 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+ animation: zoomIn .5s .8s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+
+}
+
+.modal {
+ font-family: 'Roboto';
+ background:transparent;
+ padding:20px;
+ text-align: center;
+ display:inline-block;
+ border-radius:25px 25px;
+ position:relative;
+}
+
+.modal-active{
+    overflow: hidden;
+    animation:unfoldOut 1s .3s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+    animation: zoomOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+}
+
+li{
+    list-style: none;
+}
+
+
+

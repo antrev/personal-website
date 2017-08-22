@@ -2,31 +2,42 @@
 <html lang="en">
 
 <head>
+    <!-- Effects -->
+     <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!-- google font font-family: 'Montserrat Subrayada', sans-serif;-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada" rel="stylesheet">
+    <!-- Javascript and jquery -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="../index.js" type="text/javascript"></script>
+    <!-- css -->
     <link href="../style.css" rel="stylesheet" />
     <meta charset="UTF-8">
     <title>Anton Revich!</title>
-    
 </head>
 
 <body>
     <div id='landing'>
         <div class=" weather">weather app</div>
+        <!-- login pages -->
         <div class="button">
-            <a href="employer.html" />
-            <button class="employer"> employer</button>
+            <a id="boss" href="employer.html" />
+            <button class="employer"> Employer</button>
             </a>
-            <a href="for_hire.html" />
-            <button class="freelancer"> for hire </button>
+            <a id="for_hire" href="for_hire.html" />
+            <button class="freelancer"> For Hire </button>
             </a>
         </div>
+        <!-- Contact me links -->
         <div class='contact'>
-            <a href='mailto:anton.revich@gmail.com' /><img class="png" src="../images/email.png" target="_blank" alt="email" /></a>
-            <a href='https://github.com/antrev' /><img class="png" src="../images/github.png" target="_blank" alt="github" /></a>
-            <a href='https://www.linkedin.com/in/anton-revich/' /><img class="png" src="../images/linkedin.png" target="_blank" alt="linkedin" /></a>
+            <a href='mailto:anton.revich@gmail.com'/><img id="email" class="png" src="../images/email.png" alt="email"  /></a>
+            <a href='https://github.com/antrev' target="_blank"/><img id="github" class="png" src="../images/github.png" alt="github" /></a>
+            <a href='https://www.linkedin.com/in/anton-revich/' target="_blank" /><img id="linkedin" class="png" src="../images/linkedin.png" alt="linkedin"/></a>
         </div>
     </div>
+    <footer>
+    <p>&copy; 2017 Ginger Development</p>
+    </footer>
 </body>
 
 </html>
