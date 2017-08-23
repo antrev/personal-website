@@ -38,9 +38,9 @@ $(document).ready(function() {
 
     ///// NAV BAR EFFECTS ///////
 
-      $('.nav').hover(function(){
-      $(this).toggleClass('animate bounce');
-     })
+     //  $('.nav').hover(function(){
+     //  $(this).toggleClass('animate bounce');
+     // })
       
 
 
@@ -65,18 +65,23 @@ $(document).ready(function() {
     //  }
     // );
 
-
-
-
     ///////// RANDOM QOUTE GENERATOR //////////
 
-    // $.getJSON("https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&_jsonp=mycallback",
+    // $.get("https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&_jsonp=mycallback",
     //  (data) => {
-    //   $('.hire').html(`#{data[0].content} <p> #{data[0].title </p>}`)
+    //   $('.hire').html(`${data[0].content} <p> ${data[0].title </p>}`)
     // });
 
+    /////// WEATHER APP /////////
 
+    $.get( "https://api.openweathermap.org/data/2.5/weather?q=brooklyn&appid=ed905a0d5167c428dd2bc4f5729121d0", 
+        ( data ) => {
+         $( ".weather" ).append(`<p id='loc'>${data.name}</p>`)
+         $( ".weather" ).append("<p id='weather'>" + data.weather[0].description+ "</p>")
 
+         console.log(data.weather[0].main)
+    }
+);
 
 
 

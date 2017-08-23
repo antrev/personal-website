@@ -181,7 +181,7 @@ footer {
     position: relative;
     justify-content: space-around;
     top: 25%;
-    color: white;
+    color: wheat;
     animation-name: bounce;
 
 }
@@ -189,7 +189,7 @@ footer {
 .nav, .bounce
 {
     position: relative;
-    color: white;
+    color: grey;
     font-family: 'Montserrat Subrayada', sans-serif;
     font-size: 2em;
 }
@@ -199,15 +199,26 @@ footer {
     position: absolute;
     width: 40vw;
     height: 20vh;
-    background-color: white;
+    background-color: transparent;
     top: 4%;
     right: 30%;
 }
 
 
 
-/************ FOR_HIRE ************/
+/************ WEATHER APP ************/
 
+.weather{
+  font-family: 'Roboto';
+  font-size: 2.4em;
+  text-align: center;
+  color:white;
+}
+
+#loc{
+  font-size: 1.5em;
+  color: white;
+}
 
 
 /*********** KEYFRAMES AND EFFECTS **********/
@@ -300,7 +311,7 @@ footer {
 
 .modal-background.modal-active{
  display:table-cell;
- background:rgba(0,0,0,.8);
+ background:rgba(0,0,0,.30);
  text-align:center;
  vertical-align:middle;
  transform:scaleY(.01) scaleX(0);
