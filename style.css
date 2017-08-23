@@ -195,6 +195,8 @@ footer {
 }
 
 .weather {
+    border: 2px solid black;
+    border-radius: 25px ;
     display: block;
     position: absolute;
     width: 40vw;
@@ -202,19 +204,17 @@ footer {
     background-color: transparent;
     top: 4%;
     right: 30%;
+    font-family: 'Roboto';
+    font-size: 2.4em;
+    text-align: center;
+    color:white;
 }
 
 
 
 /************ WEATHER APP ************/
 
-.weather{
-  font-family: 'Roboto';
-  font-size: 2.4em;
-  text-align: center;
-  color:white;
-}
-
+  
 #loc{
   font-size: 1.5em;
   color: white;
@@ -291,8 +291,8 @@ footer {
   }
 }
 /********* MODAL ********************/
-#modal-container{
-  position:relative;
+/*#modal-container{
+  position:fixed;
   display:table;
   height:100%;
   width:100%;
@@ -301,22 +301,23 @@ footer {
   transform:scale(0);
   z-index:1;
 
-}
+}*/
 
-.modal-background{
-    display: none;
-    transform:scale(1);
-    
-}
+// .modal-background{
+//     display: none; 
+//     transform:scaleY(.01) scaleX(0);
+//     animation: zoomOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+//     animation:unfoldOut 1s .3s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+// }
 
-.modal-background.modal-active{
- display:table-cell;
- background:rgba(0,0,0,.30);
- text-align:center;
- vertical-align:middle;
- transform:scaleY(.01) scaleX(0);
- animation:unfoldIn 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
- animation: zoomIn .5s .8s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+// .modal-background.modal-active{
+//  display:table-cell;
+//  background:rgba(0,0,0,.30);
+//  text-align:center;
+//  vertical-align:middle;
+//  transform:scaleY(.01) scaleX(0);
+//  animation: zoomIn .5s .8s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+//  animation:unfoldIn 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
 
 }
 
@@ -330,15 +331,48 @@ footer {
  position:relative;
 }
 
+.modal-background {
+    display:table-cell;
+    background:rgba(0,0,0,.30);
+    text-align:center;
+    vertical-align:middle;
+}
+
 .modal-active{
     overflow: hidden;
-    animation:unfoldOut 1s .3s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-    animation: zoomOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
 }
 
 li{
     list-style: none;
 }
 
+.modal-container {
+  position:fixed;
+  display:table;
+  height:100%;
+  width:100%;
+  top:0;
+  left:0;
+  transform:scale(0);
+  z-index:1;
+  &.one {
+    transform:scaleY(.01) scaleX(0);
+    animation:unfoldIn 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+    .modal-background {
+      .modal {
+        transform:scale(0);
+        animation: zoomIn .5s .8s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+      }
+    }
+    &.out {
+      transform:scale(1);
+      animation:unfoldOut 1s .3s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+      .modal-background {
+        .modal {
+          animation: zoomOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+        }
+      }
+    }
+  }
 
 
