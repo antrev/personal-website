@@ -65,6 +65,10 @@ $(document).ready(function() {
 
     //////// BACKGROUND IMAGES ////////
 
+    $('#refresh').click(() => {
+    location.reload();
+    });
+
     // $.get(
     //  "https://api.unsplash.com/photos/random/?client_id=e823cd6c4a141d7f5c000be889fb7fd4e1887cb05d0746e9f6dbd17a7d412d29",
     //  (data) => {
@@ -86,25 +90,28 @@ $(document).ready(function() {
 
     /////// WEATHER APP /////////
  
- function getLocation() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition);
-    } else { 
-    }
-}
-    var lat, lon;
-function showPosition(position) {
-    lat =  position.coords.latitude;
-    lon = position.coords.longitude;
+//     var government = document.getElementById( "loc")
+//  function getLocation() {
+//     console.log(government)
+//     if (navigator.geolocation) {
+//         navigator.geolocation.getCurrentPosition(showPosition);
+//     } else { 
+//         government.html = "You are scared of the government are you?"
+//     }
+// }
+//     var lat, lon;
+// function showPosition(position) {
+//     lat =  position.coords.latitude;
+//     lon = position.coords.longitude;
 
-    $.get( "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&appid=ed905a0d5167c428dd2bc4f5729121d0", 
-        ( data ) => {
-         $( ".weather" ).append(`<p id='loc'>${data.name}</p>`)
-         $( ".weather" ).append("<p id='weather'>" + data.weather[0].description+ "</p>")
-    }
-);
-}
-getLocation();
+//     $.get( "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&appid=ed905a0d5167c428dd2bc4f5729121d0", 
+//         ( data ) => {
+//          $( ".weather" ).append(`<p id='loc'>${data.name}</p>`)
+//          $( ".weather" ).append("<p id='weather'>" + data.weather[0].description+ "</p>")
+//     }
+// );
+// }
+// getLocation();
 
     
 
