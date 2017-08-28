@@ -92,10 +92,6 @@ video {
     src: url('fonts/batwhite.ttf');
 }
 
-@font-face {
-    font-family: 'roboto';
-    src: url('fonts/roboto.ttf');
-}
 
 /************ LANDING PAGE ****************/
 
@@ -128,7 +124,7 @@ body {
   font-size: 3.5em;
   text-align: center;
   color: #ffffff;
-  text-shadow: 6px 6px #000; 
+  text-shadow: 0 0 3px #000, 0 0 5px #000 
 }
 
 #landing {
@@ -139,34 +135,35 @@ body {
     position: fixed;
 }
 
+
+/* buttons*/
+
 .button {
     border: 5%;
     display: flex;
     position: relative;
     justify-content: space-around;
     top: 15%;
+
 }
-
-
-/* buttons*/
-
 
 .employer {
     font-size: 2.5em;
     color: white;
     background-color: transparent;
-    border: solid thin white;
+    border: 2px solid white;
     border-radius: 50%;
     width: 4.5em;
     height: 4.5em;
 
 }
 
+
 .freelancer {
     font-size: 2.5em;
     background-color: transparent;
     color: white;
-    border: border: solid thin white;
+    border: border: 2px solid  white;
     border-radius: 50%;
     width: 4.5em;
     height: 4.5em;
@@ -189,7 +186,7 @@ body {
 }
 
 footer {
-    position: relative;
+    position: absolute;
     display: inline-block;
     color: white;
     top: 54em;
@@ -213,11 +210,11 @@ text-align: center;
 
 .job,
 .hire {
-    position: fixed;
+    position: relative;
     width: 100% ;
     height: 100%;
-    min-width: 2000px;
-    min-height: 000px;
+    min-width: 1000px;
+    min-height: 1000px;
     background-color: blue;
 }
 
@@ -251,17 +248,30 @@ text-align: center;
     top: 2%;
     margin: auto;
     background-color: rgba(0,0,0,.30);
-    font-family: 'roboto';
-    font-size: 2.4em;
+    font-family: 'Roboto';
     text-align: center;
     color:white;
 }
   
 #loc{
-  font-size: 1.5em;
+  position: relative;
+  font-size: 4em;
   color: white;
 }
 
+#weather{
+  position: relative;
+  right: 10%;
+font-size: 1.5em;
+  color: white;
+}
+
+#temp{
+  position: relative;
+  left: 10%;
+  font-size: 1.5em;
+  color: white;
+}
 
 /*********** KEYFRAMES AND EFFECTS **********/
 
@@ -333,88 +343,77 @@ text-align: center;
   }
 }
 /********* MODAL ********************/
-/*#modal-container{
+.modal-container{
   position:fixed;
-  display:table;
   height:100%;
   width:100%;
   top:0;
   left:0;
   transform:scale(0);
   z-index:1;
+}
 
-}*/
-
-// .modal-background{
-//     display: none; 
-//     transform:scaleY(.01) scaleX(0);
-//     animation: zoomOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-//     animation:unfoldOut 1s .3s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-// }
-
-// .modal-background.modal-active{
-//  display:table-cell;
-//  background:rgba(0,0,0,.30);
-//  text-align:center;
-//  vertical-align:middle;
-//  transform:scaleY(.01) scaleX(0);
-//  animation: zoomIn .5s .8s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-//  animation:unfoldIn 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-
+ .modal-background, .modal-active{
+  font-family: 'Roboto';
+  display:table-cell;
+  background:rgba(0,0,0,.30);
+  text-align:center;
+  vertical-align:middle;
+  transform:scaleY(.01) scaleX(0);
+  animation: zoomIn .5s .8s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+  animation:unfoldIn 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
 }
 
 .modal {
- font-family: 'roboto';
  background:transparent;
- padding:20px;
+ position: relative;
  text-align: center;
- display:inline-block;
- border-radius:25px 25px;
- position:relative;
+ display:inline;
+ transform:scale(0);
+ animation: zoomOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+ animation:unfoldOut 1s .3s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+ 
 }
 
-.modal-background {
-    display:table-cell;
-    background:rgba(0,0,0,.30);
-    text-align:center;
-    vertical-align:middle;
-}
-
-.modal-active{
-    overflow: hidden;
-}
 
 li{
     list-style: none;
 }
 
-.modal-container {
-  position:fixed;
-  display:table;
-  height:100%;
-  width:100%;
-  top:0;
-  left:0;
-  transform:scale(0);
-  z-index:1;
-  &.one {
-    transform:scaleY(.01) scaleX(0);
-    animation:unfoldIn 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-    .modal-background {
-      .modal {
-        transform:scale(0);
-        animation: zoomIn .5s .8s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-      }
-    }
-    &.out {
-      transform:scale(1);
-      animation:unfoldOut 1s .3s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-      .modal-background {
-        .modal {
-          animation: zoomOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-        }
-      }
-    }
-  }
+#skill{
+  position: relative;
+ top: 9em;
+
+}
+
+#projects{
+ position: relative;
+ top: 9em;
+}
+
+#resume{
+  position: relative;
+  top: 10em;
+}
+
+#about_me{
+  position: relative;
+  top: 11em;
+}
+
+#contact{
+  position: relative;
+  top: 10em;
+}
+
+input, textarea, button{
+  display: inline-block;
+  margin: 2em;
+  left: 50%;
+  position: relative;
+}
+
+
+
 
 
