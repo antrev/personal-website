@@ -137,14 +137,12 @@ body {
 
 
 /* buttons*/
-
 .button {
     border: 5%;
     display: flex;
     position: relative;
     justify-content: space-around;
     top: 15%;
-
 }
 
 .employer {
@@ -155,7 +153,10 @@ body {
     border-radius: 50%;
     width: 4.5em;
     height: 4.5em;
+}
 
+a {
+  text-decoration: none;
 }
 
 
@@ -167,14 +168,13 @@ body {
     border-radius: 50%;
     width: 4.5em;
     height: 4.5em;
-
 }
 
 .contact {
     display: flex;
     position: relative;
     justify-content: center;
-    top: 23%;
+    top: 15%;
     left: 10%;
     animation-name: bounce;
     transform-origin: center bottom;
@@ -186,11 +186,11 @@ body {
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     display: inline-block;
     color: white;
-    top: 54em;
-    left: 44%;
+    top: 97%;
+    left: 42%;
 }
 
 
@@ -199,36 +199,49 @@ footer {
 
 #refresh{
 position: relative;
-display: block;
+display: inline;
 text-decoration: none;
 color: white;
-top: 3%;
-font-size: 2em;
+top: 25em;
+left:40em;
+font-size: 1.5em;
+font-family: 'Montserrat Subrayada', sans-serif;
+text-align: center;
+}
+
+#home{
+position: relative;
+display: inline;
+text-decoration: none;
+color: white;
+top: 25em;
+left: 2em;
+font-size: 1.5em;
 font-family: 'Montserrat Subrayada', sans-serif;
 text-align: center; 
 }
 
 .job,
 .hire {
-    position: relative;
+    position: fixed;
     width: 100% ;
     height: 100%;
     min-width: 1000px;
     min-height: 1000px;
-    background-color: blue;
+    background-color: black;
 }
 
 .navContainer {
     display: flex;
     position: relative;
     justify-content: space-around;
-    top: 10%;
+    top: 6%;
     color: black;
-    animation-name: bounce;
+    animation-name: swing;
 
 }
 
-.nav, .bounce
+.nav, .swing
 {
     position: relative;
     color: white;
@@ -262,7 +275,7 @@ text-align: center;
 #weather{
   position: relative;
   right: 10%;
-font-size: 1.5em;
+  font-size: 1.5em;
   color: white;
 }
 
@@ -353,14 +366,13 @@ font-size: 1.5em;
   z-index:1;
 }
 
- .modal-background, .modal-active{
+.modal-active{
   font-family: 'Roboto';
-  display:table-cell;
+  display:block;
   background:rgba(0,0,0,.30);
   text-align:center;
   vertical-align:middle;
   transform:scaleY(.01) scaleX(0);
-  animation: zoomIn .5s .8s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
   animation:unfoldIn 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
 }
 
@@ -369,20 +381,26 @@ font-size: 1.5em;
  position: relative;
  text-align: center;
  display:inline;
- transform:scale(0);
- animation: zoomOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
- animation:unfoldOut 1s .3s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
- 
+ transform:scaleX(0);
+ animation: zoomIn .5s .8s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
 }
 
 
 li{
     list-style: none;
 }
-
+#front{
+  position: relative;
+  right: 20%;
+}
+#back{
+  position: relative;
+  left: 20%;
+  bottom: 9em;
+}
 #skill{
   position: relative;
- top: 9em;
+  top: 8em;
 
 }
 
@@ -404,16 +422,121 @@ li{
 #contact{
   position: relative;
   top: 10em;
+  width: 30%;
+  margin: 0px auto;
+  display: block;
 }
 
 input, textarea, button{
-  display: inline-block;
-  margin: 2em;
-  left: 50%;
-  position: relative;
+ display: block;
+ width: 100%;
+ margin: 5% 0;
+ position: relative;
 }
 
+form{
+    background-color: rgba(0,0,0,.30);
+    border: 2px solid transparent;
+    border-radius: 25px;
+    width: 100%;
+    padding: 2% 20%;
+    display: block;
+    box-sizing: border-box;
+}
 
+/*********** MEDIA QUERIES *************/
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+  #skill{
+  position: relative;
+  top: 10em;
+  }
+  #refresh{
+    left: 23em;
+    top: 40em;
+  }
+  #home{
+  top: 40em; 
+  }
+  #skill{
+    top: 15em;
+  }
+  #projects{
+    top: 15em;
+  }
+  #resume{
+  }
+  #about_me{
+    top: 15em;
+  }
+  #contact{
+
+  }
+}
+
+@media only screen and (max-device-width : 425px){
+
+#refresh{
+    left: 23em;
+    top: 35em;
+  }
+  #home{
+  top: 35em; 
+  }
+
+
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+  #logo{
+  position: relative;
+  top: 10%;
+}
+
+#name{
+  font-family: 'batman';
+  display: block;
+  top: 5%;
+  font-size: 4em;
+  text-align: center;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 6px 6px #000; 
+}
+
+#title{
+  display: block;
+  font-family: 'batman';
+  font-size: 1.5em;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0 0 3px #000, 0 0 5px #000 
+}
+
+  #refresh{
+    left: 56%;
+    top: 18em;
+  }
+  #home{
+  top: 18em; 
+  }
+  #skill{
+  top: 15em;
+  }
+  #projects{
+    top: 15em;
+  }
+  #resume{
+  }
+  #about_me{
+    top: 15em;
+  }
+  #contact{
+
+  }
+}
 
 
 
