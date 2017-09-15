@@ -237,11 +237,9 @@ text-align: center;
     justify-content: space-around;
     top: 6%;
     color: black;
-    animation-name: swing;
-
 }
 
-.nav, .swing
+.nav
 {
     position: relative;
     color: white;
@@ -363,7 +361,6 @@ text-align: center;
   top:0;
   left:0;
   transform:scale(0);
-  z-index:1;
 }
 
 .modal-active{
@@ -410,8 +407,11 @@ li{
 }
 
 #resume{
+  font-family: 'Roboto';
+  color: white;
+  font-stretch: 4em;
   position: relative;
-  top: 10em;
+  top: 8em;
 }
 
 #about_me{
@@ -446,97 +446,163 @@ form{
 
 /*********** MEDIA QUERIES *************/
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (device-width: 320px){
 
   #skill{
   position: relative;
   top: 10em;
   }
   #refresh{
+  left: 23em;
+  top: 55em;
+  }
+  #home{
+  top: 55em; 
+  }
+  #skill{
+    top: 15em;
+  }
+  #projects{
+    top: 15em;
+  }
+  #resume{
+  }
+  #about_me{
+    top: 15em;
+  }
+
+  #loc{
+  font-size: 2.5em;
+  color: white;
+  top: 1em;
+}
+
+  #weather{
+  font-size: 1.5em;
+  top: 2em;
+}
+
+  #temp{
+  left: 10%;
+  font-size: 1.5em;
+  top: 2em;
+  }
+}
+
+@media only screen and (device-width: 375px) {
+
+#refresh{
+    left: 23em;
+    top: 45em;
+  }
+  #home{
+  top: 45em; 
+  }
+#loc{
+  font-size: 2.5em;
+  color: white;
+  top: 1em;
+}
+#weather{
+  font-size: 1.5em;
+  top: 3em;
+}
+
+#temp{
+  left: 10%;
+  font-size: 1.5em;
+  top: 3em;
+  }
+
+}
+
+@media only screen and (device-width: 425px) {
+
+#refresh{
     left: 23em;
     top: 40em;
   }
   #home{
   top: 40em; 
   }
-  #skill{
-    top: 15em;
-  }
-  #projects{
-    top: 15em;
-  }
-  #resume{
-  }
-  #about_me{
-    top: 15em;
-  }
-  #contact{
-
-  }
+#loc{
+  font-size: 2.5em;
+  color: white;
+  top: 1em;
+}
+#weather{
+  font-size: 1.5em;
+  top: 3em;
 }
 
-@media only screen and (max-device-width : 425px){
-
-#refresh{
-    left: 23em;
-    top: 35em;
+#temp{
+  left: 10%;
+  font-size: 1.5em;
+  top: 3em;
   }
-  #home{
-  top: 35em; 
-  }
-
 
 }
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-
-  #logo{
-  position: relative;
-  top: 10%;
-}
+@media only screen and (device-width : 768px) {
 
 #name{
-  font-family: 'batman';
-  display: block;
-  top: 5%;
-  font-size: 4em;
-  text-align: center;
-  text-align: center;
-  color: #ffffff;
-  text-shadow: 6px 6px #000; 
+    font-size: 3em; 
 }
-
 #title{
-  display: block;
-  font-family: 'batman';
-  font-size: 1.5em;
-  text-align: center;
-  color: #ffffff;
-  text-shadow: 0 0 3px #000, 0 0 5px #000 
+  font-size: 2em;
 }
 
-  #refresh{
+.employer {
+    font-size: 2em;
+    width: 3.5em;
+    height: 3.5em;
+}
+#b{
+  font-size: .75em;
+}
+
+.freelancer {
+    font-size: 2em;
+    width: 3.5em;
+    height: 3.5em;
+}
+#refresh{
     left: 56%;
-    top: 18em;
+    top: 20em;
   }
-  #home{
-  top: 18em; 
+#home{
+  top: 20em; 
   }
-  #skill{
+#skill{
   top: 15em;
   }
-  #projects{
+#projects{
     top: 15em;
   }
-  #resume{
+#resume{
   }
-  #about_me{
+#about_me{
     top: 15em;
   }
-  #contact{
-
+#contact{
   }
+  #loc{
+  font-size: 2.5em;
+  color: white;
 }
 
+}
+
+@media only screen and (device-width : 1024px){
+
+#refresh{
+    left: 56%;
+    top: 15em;
+  }
+#home{
+  top: 15em; 
+  }
+
+}
 
 

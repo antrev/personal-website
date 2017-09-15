@@ -31,24 +31,24 @@
 //          $( ".weather" ).append(`<p id='loc'>${data.name}</p>`)
 //          $( ".weather" ).append("<span id='weather'>" + data.weather[0].description+ "</span>")
 //          $( ".weather" ).append("<span id='temp'>" + data.main.temp+ "</span>")
+
 //     });
+
 // }
+
 
 
 function modalControll(){
     $('.nav').click(function(){
     if($(this).find('.modal').attr('id') == 'contact'){
         $(this).find('.modal-container').addClass('modal-active');
-    } else{
+    } else {
          $(this).find('.modal-container').toggleClass('modal-active');
         }
 })
+   
     }
 
-
-// function storeWeather(){
-//     if(localStorge.getItem(''))
-// }    
 
 $(document).ready(function() {
     console.log("You are a Developer of some kind arent you!!");
@@ -59,6 +59,7 @@ $(document).ready(function() {
     // getLocation();
 
     modalControll();
+
 
 //////// BACKGROUND IMAGES ////////
 
@@ -73,22 +74,12 @@ $(document).ready(function() {
         });
    
     $('#github').hover(() => {
-            $('#github').addClass("animated bounce");
+            $('#github').toggleClass("animated bounce");
         });
 
     $('#linkedin').hover(() => {
-            $('#linkedin').addClass("animated bounce");
+            $('#linkedin').toggleClass("animated bounce");
         });
     
-
-    ///// NAV BAR EFFECTS ///////
-
-      $('.nav').hover(function(){
-      $(this).toggleClass('swing');
-     })
-
-
-
-
 
 });
