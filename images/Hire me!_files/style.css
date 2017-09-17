@@ -529,7 +529,7 @@ form{
 
 }
 
-@media only screen and (device-width: 414px){
+@media only screen and (device-width: 412px){
   #refresh{
     left: 23em;
     top: 53em;
@@ -591,10 +591,10 @@ form{
 }
 #refresh{
     left: 56%;
-    top: 40em;
+    top: 20em;
   }
 #home{
-  top: 40em; 
+  top: 20em; 
   }
 #skill{
   top: 15em;
