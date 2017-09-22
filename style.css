@@ -111,6 +111,12 @@ body {
     background-repeat: no-repeat !important;
 }
 
+div::before,div::after{
+    content:'';
+    display: block;
+    position: relative;
+    clear: both;
+}
 
 
 /* Name */
@@ -249,6 +255,7 @@ footer {
     width: 100%;
     height: 100%;
     display: block;
+    background-color:black;
 }
 
 .navContainer {
@@ -391,17 +398,20 @@ footer {
 .modal-container {
     position: absolute;
     display: block;
-    background-color: white;
-    top: 20em;
+    background-color: black;
+    top: 0;
     left: 0;
     right: 0;
+    bottom: 0;
     transform: scale(0);
+    height: 100%;
+    width: 100%;
 }
 
 .modal-active {
     font-family: 'Roboto';
     display: block;
-    background: rgba(0, 0, 0, .30);
+    background: rgba(0,0,0,.30);
     text-align: center;
     vertical-align: middle;
     transform: scaleY(.01) scaleX(0);
@@ -409,13 +419,16 @@ footer {
 }
 
 .modal {
+    padding: 1em;
+    box-sizing: border-box;
+    margin: 0 auto;
+    top: 20%;
     background: transparent;
-    color: #708090;
+    color: white;
     font-size: 2em;
     position: relative;
     text-align: center;
-    display: inline-block;
-    width: 60%;
+    display: block;
     transform: scaleX(0);
     animation: zoomIn .5s .8s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
 }
@@ -425,39 +438,42 @@ li {
     list-style: none;
 }
 
+#dev{
+    top:2em;
+    position: relative;
+}
+
 #front {
     position: relative;
-    right: 20%;
+    float: left;
+    top: 2.5em;
+    left:12em;
 }
 
 #back {
     position: relative;
-    left: 20%;
-    bottom: 9em;
+    top: 2.5em;
+    left: 2em;
 }
 
-#skills {
-    top: 15em;
+#soon{
+    position: relative;
+    top:5em;
 }
 
-#projects {
-    top: 20em;
-}
-
-#resume {
-    top: 5em;
+iframe{
+    top: 2em;
     position: relative;
 }
 
-#About-me {
-    top: 15em;
+q{
+    position: relative;
+    top: 2em;
 }
 
-#contact {
-    top: 10em;
-    width: 30%;
-    margin: 0px auto;
-    display: block;
+#bio{
+   position: relative;
+    top: 2em; 
 }
 
 input,
@@ -519,18 +535,22 @@ form {
     }
 
     #learn {
-        font-size: .5em;
-        left: 2em;
+        font-size: .1em;
+        top: -4em;
+    }
+
+    #dev{
+        top: -6em;
     }
 
     #front {
         position: relative;
-        right: 30%;
+        left: 0;
+        top: -3em;
     }
     #back {
         position: relative;
-        left: 30%;
-        bottom: 9em;
+        top: -3em;
     }
     #skills {
         top: 20em;
@@ -561,11 +581,12 @@ form {
     }
 
     #g-money {
-        top: 25em;
+        top: 45em;
+        font-size: .5em;
     }
     #refresh {
         bottom: -7em;
-        left: 40%;
+        left: 100%;
         font-size: 1em;
     }
 
@@ -579,6 +600,11 @@ form {
         width: 250px;
         height: 250px;
     }
+
+    .modal-container{
+        position: initial;
+    }
+
 }
 
 @media only screen and (device-width: 375px) {
@@ -625,10 +651,14 @@ form {
         position: relative;
         right: 30%;
     }
+
+    #dev{
+        top: -6em;
+    }
     #back {
         position: relative;
         left: 30%;
-        bottom: 9em;
+        top: -3em;
     }
     #skills {
         top: 20em;

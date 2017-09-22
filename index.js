@@ -12,46 +12,46 @@ function setBackgroundImage() {
     
 }
 
-// function getLocation() {
-//     if (navigator.geolocation) {
-//         navigator.geolocation.getCurrentPosition(showPosition);
-//     } else { 
-//         government.HTML = "Geolocation is not supported by this browser.";
-//     }
-// }
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else { 
+        government.HTML = "Geolocation is not supported by this browser.";
+    }
+}
     
     
-// function showPosition(position) {
-//     var lat, lon;
+function showPosition(position) {
+    var lat, lon;
 
-//     lat =  position.coords.latitude;
-//     lon = position.coords.longitude;
+    lat =  position.coords.latitude;
+    lon = position.coords.longitude;
 
-//     $.get( "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&units=Imperial&appid=ed905a0d5167c428dd2bc4f5729121d0", 
-//         ( data ) => {
-//          $( ".weather" ).append(`<p id='loc'>${data.name}</p>`)
-//          $( ".weather" ).append("<span id='weather'>" + data.weather[0].description+ "</span>")
-//          $( ".weather" ).append("<span id='temp'>" + data.main.temp+ "</span>")
+    $.get( "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&units=Imperial&appid=ed905a0d5167c428dd2bc4f5729121d0", 
+        ( data ) => {
+         $( ".weather" ).append(`<p id='loc'>${data.name}</p>`)
+         $( ".weather" ).append("<span id='weather'>" + data.weather[0].description+ "</span>")
+         $( ".weather" ).append("<span id='temp'>" + data.main.temp+ "</span>")
 
-//     });
+    });
 
-// }
+}
 
 
 
 function modalControll(){
-    $('.navContainer ul li').click(function(){
+    $('.navContainer ul li, .modal-container').click(function(){
         var listItem = $(this).attr('data-nav');
         var $findListItem = $('#'+listItem);
 
-        if(!$findListItem.find('.modal-container').hasClass('modal-active')){
-            console.log($findListItem)
-            $('.modal-container').removeClass('modal-active');
+        if($(this).is($('.navContainer ul li'))){
+            if(!$findListItem.find('.modal-container').hasClass('modal-active')){
             $findListItem.addClass('modal-active');
-        }else {
-            $findListItem.removeClass('modal-active');
+            }
+        }else{
+            $(this).removeClass('modal-active');
         }
-    })
+    });
 }
 
 
@@ -60,9 +60,9 @@ $(document).ready(function() {
     console.log("You are a Developer of some kind arent you!!");
 
 
-    // setBackgroundImage();
+    setBackgroundImage();
 
-    // getLocation();
+    getLocation();
 
     modalControll();
 
