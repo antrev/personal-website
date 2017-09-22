@@ -48,7 +48,7 @@ function modalControll(){
             console.log($findListItem)
             $('.modal-container').removeClass('modal-active');
             $findListItem.addClass('modal-active');
-        }else{
+        }else {
             $findListItem.removeClass('modal-active');
         }
     })

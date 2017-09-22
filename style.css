@@ -93,11 +93,15 @@ video {
 }
 
 
+
+
 /************ LANDING PAGE ****************/
-html,body{
-  display: block;
-  position: relative;
-  height: 100%;
+
+html,
+body {
+    display: block;
+    position: relative;
+    height: 100%;
 }
 
 body {
@@ -105,46 +109,50 @@ body {
     background-color: black;
     background-size: cover !important;
     background-repeat: no-repeat !important;
-
 }
+
+
 
 /* Name */
 
-#logo{
-  position: relative;
-  top: 10%;
+#logo {
+    position: relative;
+    top: 10%;
 }
 
-#name{
-  font-family: 'batman';
-  display: block;
-  top: 5%;
-  font-size: 7.5em;
-  text-align: center;
-  text-align: center;
-  color: #ffffff;
-  text-shadow: 6px 6px #000; 
+#name {
+    font-family: 'batman';
+    display: block;
+    top: 5%;
+    font-size: 7.5em;
+    text-align: center;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 6px 6px #000;
 }
 
-#title{
-  display: block;
-  font-family: 'batman';
-  font-size: 3.5em;
-  text-align: center;
-  color: #ffffff;
-  text-shadow: 0 0 3px #000, 0 0 5px #000 
+#title {
+    display: block;
+    font-family: 'batman';
+    font-size: 3.5em;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0 0 3px #000, 0 0 5px #000
 }
 
 #landing {
     background-size: cover;
-    width: 100% ;
-    height: 100% ;
+    width: 100%;
+    height: 100%;
     position: relative;
     display: block;
 }
 
 
+
+
 /* buttons*/
+
 .button {
     border: 5%;
     display: flex;
@@ -164,7 +172,7 @@ body {
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 
@@ -172,7 +180,7 @@ a {
     font-size: 2.5em;
     background-color: transparent;
     color: white;
-    border: border: 2px solid  white;
+    border: border: 2px solid white;
     border-radius: 50%;
     width: 4.5em;
     height: 4.5em;
@@ -194,7 +202,7 @@ a {
 }
 
 footer {
-    position: fixed;
+    position: relative;
     display: inline-block;
     color: white;
     top: 97%;
@@ -203,40 +211,42 @@ footer {
 
 
 
+
+
 /*************** EMPLOYER/HIRE PAGE ************/
 
-#g-money{
-  position: absolute;
-  display: block;
-  bottom: 0;
+#g-money {
+    position: absolute;
+    display: block;
+    bottom: 0;
 }
 
-#refresh{
-position: relative;
-display: inline;
-text-decoration: none;
-color: #708090;
-left:40em;
-font-size: 1.5em;
-font-family: 'Montserrat Subrayada', sans-serif;
-text-align: center;
+#refresh {
+    position: relative;
+    display: inline;
+    text-decoration: none;
+    color: #708090;
+    left: 40em;
+    font-size: 1.5em;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    text-align: center;
 }
 
-#home{
-position: relative;
-display: inline;
-text-decoration: none;
-color: #708090;
-left: 2em;
-font-size: 1.5em;
-font-family: 'Montserrat Subrayada', sans-serif;
-text-align: center; 
+#home {
+    position: relative;
+    display: inline;
+    text-decoration: none;
+    color: #708090;
+    left: 2em;
+    font-size: 1.5em;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    text-align: center;
 }
 
 .job,
 .hire {
     position: relative;
-    width: 100% ;
+    width: 100%;
     height: 100%;
     display: block;
 }
@@ -248,56 +258,61 @@ text-align: center;
     color: black;
 }
 
-.navContainer ul{
-  display: flex;
-  position: relative;
-  justify-content: space-around;}
+.navContainer ul {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+}
 
-.navContainer ul li{
- color: #708090;
- font-family: 'Montserrat Subrayada', sans-serif;
- font-size: 2em;
-
+.navContainer ul li {
+    color: #708090;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 2em;
 }
 
 
 
 
+
+
 /************ WEATHER APP ************/
+
 .weather {
     border: 2px solid transparent;
-    border-radius: 25px ;
+    border-radius: 25px;
     display: block;
     position: relative;
     width: 30vw;
     height: 15vh;
     top: 2%;
     margin: auto;
-    background-color: rgba(0,0,0,.30);
+    background-color: rgba(0, 0, 0, .30);
     font-family: 'Roboto';
     text-align: center;
-    color:white;
-}
-  
-#loc{
-  position: relative;
-  font-size: 4em;
-  color: white;
+    color: white;
 }
 
-#weather{
-  position: relative;
-  right: 10%;
-  font-size: 1.5em;
-  color: white;
+#loc {
+    position: relative;
+    font-size: 4em;
+    color: white;
 }
 
-#temp{
-  position: relative;
-  left: 10%;
-  font-size: 1.5em;
-  color: white;
+#weather {
+    position: relative;
+    right: 10%;
+    font-size: 1.5em;
+    color: white;
 }
+
+#temp {
+    position: relative;
+    left: 10%;
+    font-size: 1.5em;
+    color: white;
+}
+
+
 
 /*********** KEYFRAMES AND EFFECTS **********/
 
@@ -328,130 +343,134 @@ text-align: center;
 }
 
 @keyframes unfoldIn {
-  0% {
-    transform:scaleY(.005) scaleX(0);
-  }
-  50% {
-    transform:scaleY(.005) scaleX(1);
-  }
-  100% {
-    transform:scaleY(1) scaleX(1);
-  }
+    0% {
+        transform: scaleY(.005) scaleX(0);
+    }
+    50% {
+        transform: scaleY(.005) scaleX(1);
+    }
+    100% {
+        transform: scaleY(1) scaleX(1);
+    }
 }
 
 @keyframes unfoldOut {
-  0% {
-    transform:scaleY(1) scaleX(1);
-  }
-  50% {
-    transform:scaleY(.005) scaleX(1);
-  }
-  100% {
-    transform:scaleY(.005) scaleX(0);
-  }
+    0% {
+        transform: scaleY(1) scaleX(1);
+    }
+    50% {
+        transform: scaleY(.005) scaleX(1);
+    }
+    100% {
+        transform: scaleY(.005) scaleX(0);
+    }
 }
 
 @keyframes zoomIn {
-  0% {
-    transform:scale(0);
-  }
-  100% {
-    transform:scale(1);
-  }
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 @keyframes zoomOut {
-  0% {
-    transform:scale(1);
-  }
-  100% {
-    transform:scale(0);
-  }
-}
-/********* MODAL ********************/
-.modal-container{
-  position:absolute;
-  display: block;
-  background-color: white;
-  top: 20em;
-  left: 0;
-  right: 0;
-  transform:scale(0);
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
 }
 
-.modal-active{
-  font-family: 'Roboto';
-  display:block;
-  background:rgba(0,0,0,.30);
-  text-align:center;
-  vertical-align:middle;
-  transform:scaleY(.01) scaleX(0);
-  animation:unfoldIn 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+
+
+/********* MODAL ********************/
+
+.modal-container {
+    position: absolute;
+    display: block;
+    background-color: white;
+    top: 20em;
+    left: 0;
+    right: 0;
+    transform: scale(0);
+}
+
+.modal-active {
+    font-family: 'Roboto';
+    display: block;
+    background: rgba(0, 0, 0, .30);
+    text-align: center;
+    vertical-align: middle;
+    transform: scaleY(.01) scaleX(0);
+    animation: unfoldIn 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
 }
 
 .modal {
- background:transparent;
- color: #708090;
- font-size: 2em;
- position: relative;
- text-align: center;
- display:inline-block;
- width: 60%;
- transform:scaleX(0);
- animation: zoomIn .5s .8s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+    background: transparent;
+    color: #708090;
+    font-size: 2em;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    width: 60%;
+    transform: scaleX(0);
+    animation: zoomIn .5s .8s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
 }
 
 
-li{
+li {
     list-style: none;
 }
-#front{
-  position: relative;
-  right: 20%;
-}
-#back{
-  position: relative;
-  left: 20%;
-  bottom: 9em;
-}
-#skill{
-  position: relative;
-  top: 8em;
 
+#front {
+    position: relative;
+    right: 20%;
 }
 
-#projects{
- top: 15em;
+#back {
+    position: relative;
+    left: 20%;
+    bottom: 9em;
 }
 
-#resume{
-  font-family: 'Roboto';
-  color: white;
-  top: 5em;
-  font-stretch: 4em;
-  position: relative;
+#skills {
+    top: 15em;
 }
 
-#About-me{
-  top: 15em;
+#projects {
+    top: 20em;
 }
 
-#contact{
-  top: 10em;
-  width: 30%;
-  margin: 0px auto;
-  display: block;
+#resume {
+    top: 5em;
+    position: relative;
 }
 
-input, textarea, button{
- display: block;
- width: 100%;
- margin: 5% 0;
- position: relative;
+#About-me {
+    top: 15em;
 }
 
-form{
-    background-color: rgba(0,0,0,.30);
+#contact {
+    top: 10em;
+    width: 30%;
+    margin: 0px auto;
+    display: block;
+}
+
+input,
+textarea,
+button {
+    display: block;
+    width: 100%;
+    margin: 5% 0;
+    position: relative;
+}
+
+form {
+    background-color: rgba(0, 0, 0, .30);
     border: 2px solid transparent;
     border-radius: 25px;
     width: 100%;
@@ -460,206 +479,384 @@ form{
     box-sizing: border-box;
 }
 
+
+
 /*********** MEDIA QUERIES *************/
 
-@media only screen and (device-width: 320px){
+@media only screen and (device-width: 320px) {
 
-  .navContainer{
-    font-size: 1em;
-  }
+    #name {
+        font-family: 'batman';
+        display: block;
+        top: 5%;
+        font-size: 2em;
+    }
 
-  #skill{
-  position: relative;
-  top: 10em;
-  }
-  #refresh{
-  left: 23em;
-  top: 55em;
-  }
-  #home{
-  top: 55em; 
-  }
-  #skill{
-    top: 15em;
-  }
-  #projects{
-    top: 15em;
-  }
-  #resume{
-  }
-  #about_me{
-    top: 15em;
-  }
+    #title {
+        display: block;
+        font-family: 'batman';
+        font-size: 1em;
+    }
 
-  #loc{
-  font-size: 2.5em;
-  color: white;
-  top: 1em;
-}
+    .employer {
+        font-size: 1.5em;
+    }
 
-  #weather{
-  font-size: 1.5em;
-  top: 2em;
-}
+    .freelancer {
+        font-size: 1.5em;
+    }
 
-  #temp{
-  left: 10%;
-  font-size: 1.5em;
-  top: 2em;
-  }
-}
-@media only screen and (device-width: 360px){
-  #refresh{
-    left: 23em;
-    top: 55em;
-  }
-  #home{
-  top: 55em; 
-  }
+    .contact {
+        top: 25%;
+        left: 10%;
+    }
+
+    footer {
+        bottom: 5em;
+        left: 37%;
+        font-size: 5%;
+        widows: 100%;
+    }
+
+    #learn {
+        font-size: .5em;
+        left: 2em;
+    }
+
+    #front {
+        position: relative;
+        right: 30%;
+    }
+    #back {
+        position: relative;
+        left: 30%;
+        bottom: 9em;
+    }
+    #skills {
+        top: 20em;
+        font-size: .5em;
+        left: 2em;
+    }
+
+    #projects {
+        top: 25em;
+        font-size: .5em;
+    }
+
+    #resume {
+        top: 5em;
+        position: relative;
+    }
+
+    #About-me {
+        top: 15em;
+        font-size: .4em;
+    }
+
+    #contact {
+        top: 10em;
+        width: 30%;
+        margin: 0px auto;
+        display: block;
+    }
+
+    #g-money {
+        top: 25em;
+    }
+    #refresh {
+        bottom: -7em;
+        left: 40%;
+        font-size: 1em;
+    }
+
+    #home {
+        bottom: -7em;
+        font-size: 1em;
+        left: 5%;
+    }
+
+    iframe {
+        width: 250px;
+        height: 250px;
+    }
 }
 
 @media only screen and (device-width: 375px) {
 
-#refresh{
-    left: 23em;
-    top: 55em;
-  }
-  #home{
-  top: 55em; 
-  }
-#loc{
-  font-size: 2.5em;
-  color: white;
-  top: 1em;
-}
-#weather{
-  font-size: 1.5em;
-  top: 3em;
-}
+    #name {
+        font-family: 'batman';
+        display: block;
+        top: 5%;
+        font-size: 2em;
+    }
 
-#temp{
-  left: 10%;
-  font-size: 1.5em;
-  top: 3em;
-  }
+    #title {
+        display: block;
+        font-family: 'batman';
+        font-size: 1em;
+    }
 
-}
+    .employer {
+        font-size: 1.5em;
+    }
 
-@media only screen and (device-width: 414px){
-  #refresh{
-    left: 23em;
-    top: 53em;
-  }
-  #home{
-  top: 53em; 
-  }
+    .freelancer {
+        font-size: 1.5em;
+    }
+
+    .contact {
+        top: 25%;
+        left: 10%;
+    }
+
+    footer {
+        bottom: 5em;
+        left: 37%;
+        font-size: 5%;
+        widows: 100%;
+    }
+
+    #learn {
+        font-size: .5em;
+        left: 2em;
+    }
+
+    #front {
+        position: relative;
+        right: 30%;
+    }
+    #back {
+        position: relative;
+        left: 30%;
+        bottom: 9em;
+    }
+    #skills {
+        top: 20em;
+        font-size: .5em;
+        left: 2em;
+    }
+
+    #projects {
+        top: 25em;
+        font-size: .5em;
+    }
+
+    #resume {
+        top: 5em;
+        position: relative;
+    }
+
+    #About-me {
+        top: 15em;
+        font-size: .4em;
+    }
+
+    #contact {
+        top: 10em;
+        width: 30%;
+        margin: 0px auto;
+        display: block;
+    }
+
+    #g-money {
+        top: 24em;
+    }
+    #refresh {
+        bottom: -7em;
+        left: 40%;
+        font-size: 1em;
+    }
+
+    #home {
+        bottom: -7em;
+        font-size: 1em;
+        left: 5%;
+    }
+
+    iframe {
+        width: 250px;
+        height: 250px;
+    }
 }
 
 @media only screen and (device-width: 425px) {
 
-#refresh{
-    left: 23em;
-    top: 40em;
-  }
-  #home{
-  top: 40em; 
-  }
-#loc{
-  font-size: 2.5em;
-  color: white;
-  top: 1em;
-}
-#weather{
-  font-size: 1.5em;
-  top: 3em;
-}
+    #name {
+        font-family: 'batman';
+        display: block;
+        top: 5%;
+        font-size: 2.5em;
+    }
 
-#temp{
-  left: 10%;
-  font-size: 1.5em;
-  top: 3em;
-  }
+    #title {
+        display: block;
+        font-family: 'batman';
+        font-size: 1.5em;
+    }
 
-}
+    .employer {
+        font-size: 1.5em;
+    }
 
-@media only screen and (device-width : 768px) {
+    .freelancer {
+        font-size: 1.5em;
+    }
 
-#name{
-    font-size: 3em; 
-}
-#title{
-  font-size: 2em;
-}
+    .contact {
+        top: 25%;
+        left: 10%;
+    }
 
-.employer {
-    font-size: 2em;
-    width: 3.5em;
-    height: 3.5em;
-}
-#b{
-  font-size: .75em;
-}
+    footer {
+        bottom: 1em;
+        left: 40%;
+        font-size: 5%;
+        widows: 100%;
+    }
 
-.freelancer {
-    font-size: 2em;
-    width: 3.5em;
-    height: 3.5em;
-}
-#refresh{
-    left: 56%;
-    top: 40em;
-  }
-#home{
-  top: 40em; 
-  }
-#skill{
-  top: 15em;
-  }
-#projects{
-    top: 15em;
-  }
-#resume{
-  }
-#about_me{
-    top: 15em;
-  }
-#contact{
-  }
-  #loc{
-  font-size: 2.5em;
-  color: white;
-}
+    #learn {
+        font-size: .5em;
+        left: 2em;
+    }
 
-#loc{
-  font-size: 2.5em;
-  color: white;
-  top: 1em;
-}
-#weather{
-  font-size: 1.5em;
-  top: 3em;
-}
+    #front {
+        position: relative;
+        right: 30%;
+    }
+    #back {
+        position: relative;
+        left: 30%;
+        bottom: 9em;
+    }
+    #skills {
+        top: 20em;
+        font-size: .5em;
+        left: 2em;
+    }
 
-#temp{
-  left: 10%;
-  font-size: 1.5em;
-  top: 3em;
-  }
+    #projects {
+        top: 25em;
+        font-size: .5em;
+    }
 
-}
+    #resume {
+        top: 5em;
+        position: relative;
+    }
 
-@media only screen and (device-width : 1024px){
+    #About-me {
+        top: 20em;
+        font-size: .4em;
+    }
 
-#refresh{
-    left: 56%;
-    top: 40em;
-  }
-#home{
-  top: 40em; 
-  }
+    #contact {
+        top: 10em;
+        width: 30%;
+        margin: 0px auto;
+        display: block;
+    }
 
+    #g-money {
+        top: 24em;
+    }
+    #refresh {
+        bottom: -7em;
+        left: 65%;
+        font-size: 1em;
+    }
+
+    #home {
+        bottom: -7em;
+        font-size: 1em;
+        left: 5%;
+    }
+
+    iframe {
+        width: 250px;
+        height: 250px;
+    }
 }
 
-@media only screen and (device-width : 1440px){
+@media only screen and (device-width: 768px) {
 
+    #name {
+        font-family: 'batman';
+        display: block;
+        top: 5%;
+        font-size: 4em;
+    }
+
+    #title {
+        display: block;
+        font-family: 'batman';
+        font-size: 2.5em;
+    }
+
+    .employer {
+        font-size: 1.5em;
+    }
+
+    .freelancer {
+        font-size: 1.5em;
+    }
+
+    .contact {
+        top: 17%;
+        left: 10%;
+    }
+    .png {
+        width: 30%;
+    }
+
+    footer {
+        bottom: 1.5em;
+        left: 45%;
+        font-size: 5%;
+        widows: 100%;
+    }
+
+    #front {
+        position: relative;
+        right: 30%;
+    }
+    #back {
+        position: relative;
+        left: 30%;
+        bottom: 9em;
+    }
+    #skills {
+        font-size: .75em;
+        left: 2em;
+    }
+
+    #projects {
+        top: 25em;
+        font-size: .75em;
+    }
+
+
+    #About-me {
+        top: 20em;
+        font-size: .5em;
+    }
+
+    #contact {
+        top: 10em;
+        width: 30%;
+        margin: 0px auto;
+        display: block;
+    }
+
+    iframe {
+        width: 450px;
+        height: 250px;
+    }
+
+    #g-money {
+        top: 29em;
+    }
+
+    #refresh {
+        left: 15em;
+    }
 }
