@@ -94,10 +94,18 @@ video {
 
 
 /************ LANDING PAGE ****************/
+html,body{
+  display: block;
+  position: relative;
+  height: 100%;
+}
 
 body {
     margin: 0 auto;
     background-color: black;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+
 }
 
 /* Name */
@@ -128,16 +136,13 @@ body {
 }
 
 #landing {
-    background: url("images/gradientbg.jpg") no-repeat center;
     background-size: cover;
     width: 100% ;
     height: 100% ;
-    position: fixed;
+    position: relative;
+    display: block;
 }
 
-/*#github{
-  background-color: transparent;
-}*/
 
 /* buttons*/
 .button {
@@ -200,12 +205,17 @@ footer {
 
 /*************** EMPLOYER/HIRE PAGE ************/
 
+#g-money{
+  position: absolute;
+  display: block;
+  bottom: 0;
+}
+
 #refresh{
 position: relative;
 display: inline;
 text-decoration: none;
-color: #777;
-top: 25em;
+color: #708090;
 left:40em;
 font-size: 1.5em;
 font-family: 'Montserrat Subrayada', sans-serif;
@@ -216,8 +226,7 @@ text-align: center;
 position: relative;
 display: inline;
 text-decoration: none;
-color: #777;
-top: 25em;
+color: #708090;
 left: 2em;
 font-size: 1.5em;
 font-family: 'Montserrat Subrayada', sans-serif;
@@ -226,29 +235,32 @@ text-align: center;
 
 .job,
 .hire {
-    position: fixed;
+    position: relative;
     width: 100% ;
     height: 100%;
-    min-width: 1000px;
-    min-height: 1000px;
-    background-color: black;
+    display: block;
 }
 
 .navContainer {
-    display: flex;
+    display: block;
     position: relative;
-    justify-content: space-around;
     top: 6%;
     color: black;
 }
 
-.nav
-{
-    position: relative;
-    color: #777;
-    font-family: 'Montserrat Subrayada', sans-serif;
-    font-size: 2em;
+.navContainer ul{
+  display: flex;
+  position: relative;
+  justify-content: space-around;}
+
+.navContainer ul li{
+ color: #708090;
+ font-family: 'Montserrat Subrayada', sans-serif;
+ font-size: 2em;
+
 }
+
+
 
 
 /************ WEATHER APP ************/
@@ -360,10 +372,10 @@ text-align: center;
 .modal-container{
   position:absolute;
   display: block;
-  height:100%;
-  width:100%;
-  top: 0;
+  background-color: white;
+  top: 20em;
   left: 0;
+  right: 0;
   transform:scale(0);
 }
 
@@ -379,9 +391,12 @@ text-align: center;
 
 .modal {
  background:transparent;
+ color: #708090;
+ font-size: 2em;
  position: relative;
  text-align: center;
- display:inline;
+ display:inline-block;
+ width: 60%;
  transform:scaleX(0);
  animation: zoomIn .5s .8s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
 }
@@ -406,25 +421,22 @@ li{
 }
 
 #projects{
- position: relative;
- top: 9em;
+ top: 15em;
 }
 
 #resume{
   font-family: 'Roboto';
   color: white;
+  top: 5em;
   font-stretch: 4em;
   position: relative;
-  top: 8em;
 }
 
-#about_me{
-  position: relative;
-  top: 11em;
+#About-me{
+  top: 15em;
 }
 
 #contact{
-  position: relative;
   top: 10em;
   width: 30%;
   margin: 0px auto;
@@ -451,6 +463,10 @@ form{
 /*********** MEDIA QUERIES *************/
 
 @media only screen and (device-width: 320px){
+
+  .navContainer{
+    font-size: 1em;
+  }
 
   #skill{
   position: relative;

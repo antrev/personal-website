@@ -10,72 +10,71 @@
     <!-- css -->
     <link href="./style.css" rel="stylesheet" />
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Let me make your next project</title>
 </head>
 
 <body>
     <div class='hire'>
         <div class="weather"></div>
-        <nav class="navContainer">
-            <div class="animated fadeIn nav">Skills
-                <div class="modal-container">
-                        <div id="skill" class="modal">
-                            <p>Full-Stack-Development skills</p><br/>
-                                <ul id="front">Front-End
-                                    <li>HTML5/CSS3</li>
-                                    <li>React</li>
-                                    <li>Vue.js</li>
-                                    <li>BootStrap</li>
-                                    <li>JavaScript</li>
-                                    <li>Jquery</li>
-                                </ul><br/>
-                                <ul id="back">Back-End
-                                    <li>Node.js</li>
-                                    <li>Express.js</li>
-                                    <li>Ruby-On-Rails</li>
-                                    <li>Postgres</li>
-                                    <li>MongoDB</li>
-                                </ul>  
-                        </div>     
-                </div>       
+        <nav class=" animated fadeIn navContainer">
+            <ul>
+                <li data-nav="skills">skills</li>
+                <li data-nav="projects">Projects</li>
+                <li data-nav="Contact">Contact</li>
+                <li data-nav="About-me">About Me</li>
+            </ul>        
+        </nav>
+        <div id="skills" class="modal-container">
+            <div class="modal">
+                <h2>Full-Stack-Development skills</h2>
+                <ul id="front">Front-End
+                    <li>HTML5/CSS3</li>
+                    <li>React</li>
+                    <li>Vue.js</li>
+                    <li>BootStrap</li>
+                    <li>JavaScript</li>
+                    <li>Jquery</li>
+                </ul><br/>
+                <ul id="back">Back-End
+                     <li>Node.js</li>
+                     <li>Express.js</li>
+                     <li>Ruby-On-Rails</li>
+                     <li>Postgres</li>
+                     <li>MongoDB</li>
+                </ul>
             </div>
-
-             <div class="animated fadeIn nav">Projects
-                <div class="modal-container">
-                    <div id="projects" class="modal">
-                        Coming soon . . . 
-                    </div>
-                </div>
+        </div>
+        <div id="projects" class="modal-container">
+            <div class="modal">
+                <h2>Coming Soon</h2>
             </div>
-
-            <div class="animated fadeIn nav">Contact
-                <div class="modal-container">
-                        <div id="contact" class="modal">
-                            <form method="POST" action="https://formspree.io/anton.revich@gmail.com">
-                                <input type="text" name="name" placeholder="Your Name">
-                                <input type="number" name="number" placeholder="Your Cell phone">
-                                <input type="email" name="email" placeholder="Your email">
-                                <textarea name="message" placeholder="Your message"></textarea>
-                                <button type="submit">Send</button>
-                            </form>
-                        </div>
-                </div>        
-                </div>
-            
-            <div class="animated fadeIn nav">About Me
-                <div class="modal-container">
-                    <div id="about_me" class="modal">
-                        <q>Work smart not hard</q>
+        </div>
+        <div id="Contact" class="modal-container">
+            <div class="modal">
+            <h2>Get In Touch!</h2>
+                <form method="POST" action="https://formspree.io/anton.revich@gmail.com">
+                    <input type="text" name="name" placeholder="Your Name">
+                    <input type="number" name="number" placeholder="Your Cell phone">
+                    <input type="email" name="email" placeholder="Your email">
+                    <textarea name="message" placeholder="Your message"></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+        <div id="About-me" class="modal-container">
+            <div class="modal">
+            <q>Work smart not hard</q>
                         <br/>
                         <p>I am a web developer with a background in management and nonprofit work. My outgoing and out of the box thinking leads me to ask questions and look for effective resolutions to those questions. With my skills of adaptability and quick uptake I am able to accomplish many tasks in a timely manner. My goal in life is to help people and I hope to use my aptitude in technology to make that a reality. I am a lifelong learner and I strive to learn from those around me on a daily basis, to add their knowledge an expertise to my arsenal of skills. I am excited to join a development team to continue growing my web development skills. </p>
                         </div>
-                </div>
             </div>
-        </nav>
+        </div>
         
-        <a id='home' href="http://antonrevich.io/">Home</a>
-        <a id='refresh' href="#">Change Background</a>
-        <span><span>
+        <div id='g-money'>
+            <a id='home' href="http://antonrevich.io/">Home</a>
+            <a id='refresh' href="#">Change Background</a>
+        </div>
     </div>
 
     <script type="text/javascript">
